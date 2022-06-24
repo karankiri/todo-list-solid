@@ -1,16 +1,12 @@
 import { createSignal } from 'solid-js';
+import ToDoInput from './components/ToDoInput';
+import { HopeProvider } from '@hope-ui/solid';
 
 const App = () => {
-  const [count, setCount] = createSignal(0);
-
   return (
-    <button
-      onClick={() => {
-        setCount(count() + 1);
-      }}
-    >
-      {count()}
-    </button>
+    <HopeProvider>
+      <ToDoInput />
+    </HopeProvider>
   );
 };
 
