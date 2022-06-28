@@ -1,11 +1,10 @@
-import { createSignal } from 'solid-js';
-import ToDoInput from './components/ToDoInput';
 import { HopeProvider } from '@hope-ui/solid';
+import ToDoList from './components/ToDoList';
 
 const App = () => {
   return (
     <HopeProvider>
-      <ToDoInput />
+      <ToDoList />
     </HopeProvider>
   );
 };
